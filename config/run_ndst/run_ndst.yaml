@@ -1,0 +1,24 @@
+
+# vehicle name
+vehicle_name: fusion
+# camera image topic 
+camera_image_topic: /fusion/front_camera/image_raw
+# vehicle control topic name
+vehicle_control_topic: /fusion
+vehicle_steer_topic: /steer
+goal_velocity: /goal_velocity
+# p3d - current position and velocity
+base_pose_topic: /base_pose_ground_truth
+
+######################################################
+## when training and running, cropping input image 
+
+# crop (capture) area from a camera image
+# - gazebo simulated camera resolution: 800x800
+image_crop_x1: 100 #0     #0
+image_crop_y1: 380 #310   # 373
+image_crop_x2: 700 #800   #800
+image_crop_y2: 516 #530   #530 # 516
+
+image_width: 800
+image_height: 800

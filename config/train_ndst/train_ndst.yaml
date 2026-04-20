@@ -1,0 +1,48 @@
+# network definition
+network_type: 2       # refer to neural_net/const.py
+gpus: 1
+
+weight_load: False
+
+style_train: False
+
+cnn_lr:  0.0001          # default of Adam is 0.001
+decay: 0.0000001        
+
+# normalize data
+normalize_data: False
+samples_per_bin: 4000
+
+# training 
+validation_rate: 0.2
+num_epochs: 1000
+batch_size: 64
+num_inputs: 3     # input: image, measurements, velocity
+num_outputs: 3    # output: measurements(steering_angle, throttle, brake)
+early_stopping_patience: 100
+
+# data augmentation
+data_aug_flip: False
+data_aug_bright: False
+data_aug_shift: False
+
+# input image size to the neural network
+input_image_width : 160 #160 #270 # 160 # 512
+input_image_height: 160 #160 #90  # 160 # 96
+input_image_depth : 3
+
+# steering data preprocessing
+# - steering angle adjustment
+
+# style a
+steering_angle_scale: 10.0
+throttle_scale: 5.0
+brake_scale: 5.0
+
+# style b
+# steering_angle_scale: 5.0                
+# throttle_scale: 1.0
+# brake_scale: 1.0
+
+# - steering wheel jitter tolerance
+steering_angle_jitter_tolerance: 0.01
