@@ -65,6 +65,7 @@ Gazebo
 Clone this repository:
 
 ```bash
+git clone https://github.com/ndst2026/ndst.git
 cd ndst
 ```
 
