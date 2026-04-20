@@ -118,6 +118,27 @@ The output should point to:
 
 ---
 
+## Dataset and Model Weights
+
+The dataset and model weights are provided separately because of file size limitations.
+
+Download all files from the release page:
+
+```text
+https://github.com/ndst2026/ndst/releases/tag/v1.0.0
+```
+
+After downloading all dataset parts, reconstruct and extract the dataset:
+```text
+cat ndst_dataset.tar.gz.part_* > ndst_dataset.tar.gz
+tar -xzf ndst_dataset.tar.gz
+```
+
+Extract the model weights:
+```text
+unzip ndst_model_weights.zip -d .
+```
+
 
 ## Dataset Format
 
