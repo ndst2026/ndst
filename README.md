@@ -1,4 +1,4 @@
-# NDST: Neural Driving Style Transfer
+# NDST: Neural Driving Style Transfer for Human-Like Vision-Based Autonomous Driving
 
 This repository provides an implementation of **Neural Driving Style Transfer (NDST)**, a vision-based autonomous driving personalization framework. NDST transfers a driver's individual driving style to an autonomous vehicle model by adding a Personalized Block (PB) on top of a pre-trained Baseline Driving Model (BDM).
 
